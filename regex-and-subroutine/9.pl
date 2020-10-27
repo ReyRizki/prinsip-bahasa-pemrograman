@@ -1,10 +1,11 @@
 use strict;
 
-my @arr = ("Alamat", "aku", "Alamat04", "Handphone", "03", "02", "z9");
-my @result = bubbleSort(join(" ", @arr));
-print (join(" ", @result), "\n");
+print ("Input string array\t: ");
+my $str = <>;
 
-# bubbleSort(join(" ", @arr));
+my @arr = split(' ', $str);
+my @result = bubbleSort(@arr);
+print ("Sorted string arr\t: ", join(" ", @result), "\n");
 
 sub category
 {
@@ -88,7 +89,7 @@ sub stringCompare
 
 sub bubbleSort
 {
-    my @arr = split(' ', @_[0]);
+    my @arr = @_;
 
     my $len = @arr;
 

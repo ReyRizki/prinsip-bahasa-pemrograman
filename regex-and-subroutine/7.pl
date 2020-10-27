@@ -1,5 +1,6 @@
 use strict;
 
+print("Input domain: ");
 my $domain = <>;
 
 if ($domain =~ m/^(.+[a-z0-9])\.(.+[a-z0-9])\.(com|my|id|net|)$/) {

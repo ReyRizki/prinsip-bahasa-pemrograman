@@ -1,9 +1,19 @@
 use strict;
 
-my @a = (1, 2, 3);
+print("Input number of element in array: ");
+my $n = <>;
 
-print(min(@a), "\n");
-print(max(@a), "\n");
+my @a;
+print("Input array :\n");
+for (my $i = 0; $i < $n; $i++)
+{
+    my $x = <>;
+
+    push(@a, $x);
+}
+
+print("Max: ", min(@a));
+print("Min: ", max(@a));
 
 sub min
 {
