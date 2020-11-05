@@ -1,5 +1,6 @@
 use strict;
 
+print("Enter password: ");
 my $pass = <>;
 
 if ($pass =~ m/^(?!.*[ ])(?=.*\d)(?=.*\W)(?=.*[a-z])(?=.*[A-Z]).{10,}$/) {

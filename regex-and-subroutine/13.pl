@@ -1,8 +1,11 @@
 use strict;
 
-my $str = "JTK Polban adalah sekolah vokasi";
+print("Input string: ");
+my $str = <>;
 
-countProps($str);
+my @result = countProps($str);
+
+print ("Words: ", @result[0], "\nChars: ", @result[1], "\n");
 
 sub countProps
 {
@@ -16,5 +19,5 @@ sub countProps
         $char += length($word);
     }
 
-    print ($words, " ", $char);
+    return($words, $char);
 }

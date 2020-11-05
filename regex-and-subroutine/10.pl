@@ -1,9 +1,28 @@
 use strict;
 
-my @a = (1, 2, 3);
-my @b = (4, 5, 6);
+print("Input number of element in array: ");
+my $n = <>;
 
-print (join(" ", addArray(@a, @b)), "\n");
+my @a;
+
+print("Input array 1:\n");
+for (my $i = 0; $i < $n; $i++)
+{
+    my $x = <>;
+
+    push(@a, $x);
+}
+
+my @b;
+print("Input array 2:\n");
+for (my $i = 0; $i < $n; $i++)
+{
+    my $x = <>;
+
+    push(@b, $x);
+}
+
+print ("Result: ", join(" ", addArray(@a, @b)), "\n");
 
 sub addArray
 {
@@ -20,5 +39,4 @@ sub addArray
     }
     
     return @result;
-    # print(@a, " ", @b, "\n");
 }
