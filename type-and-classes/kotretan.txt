@@ -1,0 +1,3 @@
+mult (Succ (Succ Zero)) (Succ Zero)
+
+Succ Zero + Succ Zero
